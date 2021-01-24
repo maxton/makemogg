@@ -8,12 +8,14 @@
 #include "OggMap.h"
 #include "CCallbacks.h"
 
+#define VERSION "1.0.0"
+
 int usage(const char* name) {
 	char* usage = "Usage: \n"
     "To encrypt a mogg: %s <input_mogg> -e <output_encrypted_mogg>\n"
     "To create a mogg from an ogg: %s <input_ogg> -m <output_mogg>\n"
     "To do both: %s <input_ogg> -em <output_encrypted_mogg>\n"
-		"\n\n";
+		"\n\nVersion " VERSION "\n";
 	printf(usage, name, name, name);
 	return 0;
 }
